@@ -38,11 +38,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 4rem;display:flex;
 /* HERO */
 #hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding:0 4rem;padding-top:64px;align-items:center;gap:4rem;position:relative}
 .hero-left{display:flex;flex-direction:column;justify-content:center}
-.hero-eyebrow{font-size:0.75rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--mid);margin-bottom:2rem}
-.hero-headline{font-family:var(--serif);font-size:clamp(3rem,5.5vw,5.5rem);line-height:1.06;letter-spacing:-0.01em;margin-bottom:2rem;color:var(--ink)}
+.hero-eyebrow{font-size:0.75rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--mid);margin-bottom:1.5rem}
+.hero-headline{font-family:var(--serif);font-size:clamp(2.8rem,5.2vw,5.2rem);line-height:1.06;letter-spacing:-0.01em;margin-bottom:1.5rem;color:var(--ink)}
 .hero-headline em{font-style:italic;color:var(--sand)}
-.hero-sub{font-size:1.05rem;color:var(--mid);line-height:1.7;max-width:460px;margin-bottom:3rem;font-weight:300}
-.hero-actions{display:flex;gap:1.25rem;align-items:center}
+.hero-sub{font-size:1.05rem;color:var(--mid);line-height:1.7;max-width:480px;margin-bottom:1.75rem;font-weight:300}
+.hero-specialties{display:flex;flex-wrap:wrap;gap:0.55rem;margin-bottom:2.5rem;max-width:520px}
+.hero-specialty{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);padding:0.45rem 0.85rem;border:1px solid var(--border);background:rgba(255,255,255,0.35)}
+.hero-actions{display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap}
 .btn-primary{background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:0.82rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;padding:0.85rem 2rem;border:none;cursor:pointer;text-decoration:none;transition:opacity 0.2s}
 .btn-primary:hover{opacity:0.8}
 .btn-ghost{background:none;color:var(--ink);font-family:var(--sans);font-size:0.82rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;padding:0.85rem 0;border:none;cursor:pointer;text-decoration:none;border-bottom:1px solid var(--ink);transition:color 0.2s,border-color 0.2s}
@@ -74,6 +76,59 @@ section{padding:8rem 4rem}
 .stat-item{}
 .stat-num{font-family:var(--serif);font-size:clamp(2.6rem,3.5vw,3.2rem);color:var(--ink);line-height:1}
 .stat-label{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--mid);margin-top:0.65rem;line-height:1.5;max-width:16rem}
+
+/* IMPACT METRICS */
+#impact{padding:5rem 4rem;background:var(--ink)}
+.impact-header{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:3.5rem}
+.impact-label{font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(248,248,246,0.4)}
+.impact-lede{font-family:var(--serif);font-size:clamp(1.4rem,2.2vw,1.9rem);color:var(--paper);max-width:420px;line-height:1.25;text-align:right}
+.impact-lede em{font-style:italic;color:var(--sand)}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(248,248,246,0.12)}
+.impact-item{padding:2.25rem 1.75rem 2.25rem 0;border-right:1px solid rgba(248,248,246,0.1);border-bottom:1px solid rgba(248,248,246,0.1)}
+.impact-item:nth-child(4n){border-right:none;padding-right:0}
+.impact-item:nth-child(n+5){border-bottom:none;padding-top:2.25rem}
+.impact-num{font-family:var(--serif);font-size:clamp(2.4rem,3.8vw,3.4rem);color:var(--sand);line-height:1;font-style:italic}
+.impact-text{font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(248,248,246,0.5);margin-top:0.85rem;line-height:1.55;max-width:11rem}
+
+/* HIRING STATUS */
+#hiring{padding:4.5rem 4rem}
+.hiring-inner{display:grid;grid-template-columns:1fr 1.4fr 1.4fr;gap:4rem;align-items:start;padding:2.75rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.hiring-intro-label{font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--mid);margin-bottom:0.85rem}
+.hiring-intro-title{font-family:var(--serif);font-size:clamp(1.6rem,2.4vw,2.1rem);line-height:1.2;color:var(--ink)}
+.hiring-intro-title em{font-style:italic;color:var(--sand)}
+.hiring-col-label{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand);margin-bottom:1.25rem;display:block}
+.hiring-list{display:flex;flex-direction:column;gap:0.85rem}
+.hiring-item{display:flex;align-items:center;gap:0.75rem;font-size:0.95rem;color:var(--ink);font-weight:400}
+.hiring-check{width:1.1rem;height:1.1rem;border:1px solid var(--sand);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--sand);font-size:0.7rem;line-height:1}
+
+/* TESTIMONIALS */
+#proof{padding:7rem 4rem}
+.proof-header{margin-bottom:3.5rem;max-width:520px}
+.proof-label{font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--mid);margin-bottom:1rem}
+.proof-title{font-family:var(--serif);font-size:clamp(2rem,3vw,2.8rem);line-height:1.15;color:var(--ink)}
+.proof-title em{font-style:italic;color:var(--sand)}
+.proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.proof-card{padding:2.25rem;border:1px solid var(--border);display:flex;flex-direction:column;min-height:260px;background:rgba(255,255,255,0.25);max-width:420px}
+.proof-card-role{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand);margin-bottom:1.5rem}
+.proof-quote{font-family:var(--serif);font-size:1.15rem;line-height:1.45;color:var(--ink);flex:1}
+.proof-quote.placeholder{color:var(--mid);font-style:italic;font-size:1.05rem}
+.proof-meta{margin-top:2rem;padding-top:1.25rem;border-top:1px solid var(--border)}
+.proof-name{font-size:0.85rem;color:var(--ink);font-weight:500}
+.proof-detail{font-size:0.75rem;color:var(--mid);margin-top:0.25rem;font-weight:300}
+
+/* CASE PROCESS + THINKING */
+.case-process{display:flex;flex-wrap:wrap;align-items:center;gap:0.55rem 0.35rem;margin-bottom:2rem}
+.case-process-step{font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--mid)}
+.case-process-step.is-active{color:var(--sand)}
+.case-process-arrow{font-size:0.62rem;color:var(--border);margin:0 0.15rem}
+.case-grid-4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1.75rem;margin-bottom:2rem}
+.case-lesson{margin-top:1.75rem;padding-top:1.75rem;border-top:1px solid var(--border);display:grid;grid-template-columns:8rem 1fr;gap:1.5rem;align-items:start}
+.thinking-row{margin-top:2rem}
+.thinking-label{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand);margin-bottom:0.75rem;display:block}
+.thinking-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.thinking-card{aspect-ratio:4/3;background:var(--sand-light);border:1px dashed rgba(196,168,130,0.45);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.25rem;text-align:center;gap:0.5rem}
+.thinking-card-title{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink)}
+.thinking-card-note{font-size:0.7rem;color:var(--mid);font-weight:300;line-height:1.45;max-width:9rem}
 
 /* CASE STUDIES */
 #work{padding:8rem 0}
@@ -180,7 +235,8 @@ section{padding:8rem 4rem}
 .contact-left{}
 .contact-headline{font-family:var(--serif);font-size:clamp(2.5rem,5vw,5rem);color:var(--paper);line-height:1.05;margin-bottom:2rem}
 .contact-headline em{color:var(--sand);font-style:italic}
-.contact-sub{font-size:1rem;color:rgba(248,248,246,0.5);line-height:1.7;font-weight:300;max-width:360px}
+.contact-sub{font-size:1rem;color:rgba(248,248,246,0.5);line-height:1.7;font-weight:300;max-width:400px;margin-bottom:1.5rem}
+.contact-cta-note{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--sand)}
 .contact-right{display:flex;flex-direction:column;justify-content:flex-end;gap:1.5rem}
 .contact-link{display:flex;align-items:center;justify-content:space-between;padding:1.5rem 0;border-top:1px solid rgba(248,248,246,0.1);text-decoration:none;color:var(--paper);transition:color 0.2s}
 .contact-link:last-child{border-bottom:1px solid rgba(248,248,246,0.1)}
@@ -206,6 +262,22 @@ section{padding:8rem 4rem}
   .section-divider{margin:0 1.5rem}
   #about,#skills,#recognition{grid-template-columns:1fr;gap:2rem}
   .about-stats{grid-template-columns:1fr 1fr;gap:2rem 1.5rem}
+  #impact{padding:4rem 1.5rem}
+  .impact-header{flex-direction:column;align-items:flex-start;gap:1rem;margin-bottom:2.5rem}
+  .impact-lede{text-align:left}
+  .impact-grid{grid-template-columns:1fr 1fr}
+  .impact-item{padding:1.75rem 1rem 1.75rem 0;border-bottom:1px solid rgba(248,248,246,0.1)}
+  .impact-item:nth-child(2n){border-right:none;padding-right:0}
+  .impact-item:nth-child(4n){border-right:1px solid rgba(248,248,246,0.1)}
+  .impact-item:nth-child(even){border-right:none}
+  .impact-item:nth-last-child(-n+2){border-bottom:none}
+  #hiring{padding:3.5rem 1.5rem}
+  .hiring-inner{grid-template-columns:1fr;gap:2.5rem;padding:2rem 0}
+  #proof{padding:5rem 1.5rem}
+  .proof-grid{grid-template-columns:1fr}
+  .case-grid-4{grid-template-columns:1fr 1fr}
+  .case-lesson{grid-template-columns:1fr;gap:0.5rem}
+  .thinking-grid{grid-template-columns:1fr 1fr}
   #work{padding:5rem 0}
   .work-header{padding:0 1.5rem;margin-bottom:3rem}
   .case{padding:3rem 1.5rem}
@@ -233,9 +305,9 @@ section{padding:8rem 4rem}
 <nav>
   <a class="nav-logo" href="#">Larissa Gusmão</a>
   <div class="nav-links">
+    <a href="#impact">Impact</a>
     <a href="#work">Work</a>
-    <a href="#philosophy">Thinking</a>
-    <a href="#skills">Skills</a>
+    <a href="#proof">Proof</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -245,17 +317,17 @@ section{padding:8rem 4rem}
   <div class="ticker-inner">
     <span class="ticker-item">Creative Strategy</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Performance Marketing</span><span class="ticker-item ticker-sep">×</span>
+    <span class="ticker-item">Content Systems</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Consumer Psychology</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Creative Testing</span><span class="ticker-item ticker-sep">×</span>
-    <span class="ticker-item">Storytelling</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">AI Workflows</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Brand Building</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Paid Social</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Creative Strategy</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Performance Marketing</span><span class="ticker-item ticker-sep">×</span>
+    <span class="ticker-item">Content Systems</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Consumer Psychology</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Creative Testing</span><span class="ticker-item ticker-sep">×</span>
-    <span class="ticker-item">Storytelling</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">AI Workflows</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Brand Building</span><span class="ticker-item ticker-sep">×</span>
     <span class="ticker-item">Paid Social</span><span class="ticker-item ticker-sep">×</span>
@@ -265,16 +337,23 @@ section{padding:8rem 4rem}
 <!-- HERO -->
 <section id="hero" style="padding-top:0;padding-bottom:0;margin-top:0">
   <div class="hero-left fade-up">
-    <p class="hero-eyebrow">Creative Strategist · Performance Creative · Growth Marketing</p>
+    <p class="hero-eyebrow">Senior Creative Strategist · DTC Growth</p>
     <h1 class="hero-headline">
-      I build creative<br>systems that make<br><em>brands grow.</em>
+      I turn insight into<br>creative systems<br>that <em>scale brands.</em>
     </h1>
     <p class="hero-sub">
-      Strategy first. Story always. Results you can measure. I sit at the intersection of consumer psychology, creative testing, and performance marketing.
+      I help high-growth consumer brands win attention and convert it — through creative strategy, performance storytelling, and testing systems built for speed.
     </p>
+    <div class="hero-specialties" aria-label="Specialties">
+      <span class="hero-specialty">Creative Strategy</span>
+      <span class="hero-specialty">Performance Marketing</span>
+      <span class="hero-specialty">Content Systems</span>
+      <span class="hero-specialty">Consumer Psychology</span>
+      <span class="hero-specialty">AI Workflows</span>
+    </div>
     <div class="hero-actions">
       <a href="#work" class="btn-primary">View Work</a>
-      <a href="#contact" class="btn-ghost">Contact ↗</a>
+      <a href="#contact" class="btn-ghost">Let's Talk ↗</a>
     </div>
   </div>
   <div class="hero-right fade-up delay-2">
@@ -290,7 +369,74 @@ section{padding:8rem 4rem}
   </div>
 </section>
 
-<div class="section-divider"></div>
+<!-- IMPACT METRICS -->
+<section id="impact" class="fade-up">
+  <div class="impact-header">
+    <p class="impact-label">Selected Impact</p>
+    <p class="impact-lede">Results from <em>inside</em> a fast-growing DTC startup.</p>
+  </div>
+  <div class="impact-grid">
+    <div class="impact-item">
+      <div class="impact-num">2+</div>
+      <div class="impact-text">Years in high-growth DTC</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-num">50+</div>
+      <div class="impact-text">Weekly creative variations</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-num">30+</div>
+      <div class="impact-text">Videos produced monthly</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-num">~$10K</div>
+      <div class="impact-text">Daily Meta ad spend supported</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-num">200+</div>
+      <div class="impact-text">Sales from one winning creative</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-num">9</div>
+      <div class="impact-text">Product launches supported</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-num">100+</div>
+      <div class="impact-text">AI creative assets produced</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-num">2</div>
+      <div class="impact-text">Distinct brand voices built</div>
+    </div>
+  </div>
+</section>
+
+<!-- HIRING STATUS -->
+<section id="hiring" class="fade-up">
+  <div class="hiring-inner">
+    <div>
+      <p class="hiring-intro-label">Open to Opportunities</p>
+      <h2 class="hiring-intro-title">Currently looking<br>for the <em>right role.</em></h2>
+    </div>
+    <div>
+      <span class="hiring-col-label">Roles</span>
+      <div class="hiring-list">
+        <div class="hiring-item"><span class="hiring-check" aria-hidden="true">✓</span>Creative Strategist</div>
+        <div class="hiring-item"><span class="hiring-check" aria-hidden="true">✓</span>Performance Creative</div>
+        <div class="hiring-item"><span class="hiring-check" aria-hidden="true">✓</span>Growth Marketing</div>
+        <div class="hiring-item"><span class="hiring-check" aria-hidden="true">✓</span>Content Marketing</div>
+      </div>
+    </div>
+    <div>
+      <span class="hiring-col-label">Availability</span>
+      <div class="hiring-list">
+        <div class="hiring-item"><span class="hiring-check" aria-hidden="true">✓</span>Remote</div>
+        <div class="hiring-item"><span class="hiring-check" aria-hidden="true">✓</span>Australia</div>
+        <div class="hiring-item"><span class="hiring-check" aria-hidden="true">✓</span>Worldwide</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ABOUT -->
 <section id="about" class="fade-up">
@@ -300,36 +446,46 @@ section{padding:8rem 4rem}
       Curiosity led me here.<br><em>Systems keep me here.</em>
     </h2>
     <div class="about-body">
-      <p>I studied marketing because I was fascinated by why people make decisions. Then I moved to Australia, joined a fast-growing beverage startup, and discovered something better than theory: the real feedback loop of <strong>making things, testing them, and watching what works.</strong></p>
-      <p>For over two years, I've been the person who connects every creative decision to a business outcome. I don't produce content. I develop hypotheses, research competitors, study customer psychology, build creative systems, test them at scale, and iterate until the numbers move.</p>
-      <p>I thrive in environments where speed matters and roles blur. <strong>I wear multiple hats without losing the thread.</strong></p>
+      <p>I studied marketing to understand why people decide. Then I moved to Australia, joined a fast-growing beverage startup, and found something better than theory: <strong>make, test, learn — then scale what works.</strong></p>
+      <p>For 2+ years I've connected every creative decision to a business outcome — researching competitors, studying customer psychology, building content systems, and iterating until the numbers move.</p>
+      <p>I thrive where speed matters and roles blur. <strong>I wear multiple hats without losing the thread.</strong></p>
     </div>
-    <div class="about-stats">
-      <div class="stat-item">
-        <div class="stat-num">2+</div>
-        <div class="stat-label">Years Inside a High-Growth DTC Startup</div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SOCIAL PROOF -->
+<section id="proof" class="fade-up">
+  <div class="proof-header">
+    <p class="proof-label">Social Proof</p>
+    <h2 class="proof-title">What it's like<br>to <em>work with me.</em></h2>
+  </div>
+  <div class="proof-grid">
+    <article class="proof-card">
+      <span class="proof-card-role">Manager</span>
+      <p class="proof-quote placeholder">"[Manager testimonial — how I think, collaborate, and drive creative performance.]"</p>
+      <div class="proof-meta">
+        <p class="proof-name">Name Surname</p>
+        <p class="proof-detail">Title · Company</p>
       </div>
-      <div class="stat-item">
-        <div class="stat-num">50+</div>
-        <div class="stat-label">Creative Variations Produced Weekly</div>
+    </article>
+    <article class="proof-card">
+      <span class="proof-card-role">Founder</span>
+      <p class="proof-quote placeholder">"[Founder testimonial — impact on brand growth, storytelling, and team velocity.]"</p>
+      <div class="proof-meta">
+        <p class="proof-name">Name Surname</p>
+        <p class="proof-detail">Founder · Company</p>
       </div>
-      <div class="stat-item">
-        <div class="stat-num">30+</div>
-        <div class="stat-label">Instagram &amp; YouTube Videos Produced Monthly</div>
+    </article>
+    <article class="proof-card">
+      <span class="proof-card-role">Client / Collaborator</span>
+      <p class="proof-quote placeholder">"[Client testimonial — clarity of strategy, quality of creative, and results delivered.]"</p>
+      <div class="proof-meta">
+        <p class="proof-name">Name Surname</p>
+        <p class="proof-detail">Role · Brand</p>
       </div>
-      <div class="stat-item">
-        <div class="stat-num">9</div>
-        <div class="stat-label">Product Launches Supported</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">100+</div>
-        <div class="stat-label">AI Creative Assets Produced</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">200+</div>
-        <div class="stat-label">Sales Generated from a Single Winning Creative</div>
-      </div>
-    </div>
+    </article>
   </div>
 </section>
 
@@ -339,7 +495,7 @@ section{padding:8rem 4rem}
 <div id="work">
   <div class="work-header fade-up">
     <h2>Selected Work</h2>
-    <p>Six systems. Each one built to solve a specific problem. Each one documented the way it was made.</p>
+    <p>Six systems. Each built to solve a real growth problem — and documented the way it was made.</p>
   </div>
 
   <!-- CASE 01 -->
@@ -357,28 +513,42 @@ section{padding:8rem 4rem}
       </div>
       <div class="case-body">
         <h3 class="case-title">Building Community<br>Through Storytelling</h3>
+        <div class="case-process" aria-hidden="true">
+          <span class="case-process-step is-active">Challenge</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step">Research</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Strategy</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Execution</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Creative</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Results</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Lesson</span>
+        </div>
         <div class="case-grid">
           <div>
             <span class="case-block-label">Challenge</span>
-            <p class="case-block-text">Organic content wasn't moving product. The brand needed reach and trust — but selling directly felt forced in a saturated market.</p>
+            <p class="case-block-text">Organic content wasn't moving product. The brand needed reach and trust — without hard-selling in a saturated market.</p>
           </div>
           <div>
             <span class="case-block-label">Strategy</span>
-            <p class="case-block-text">Shift the focus entirely. <strong>Stop selling the product. Start telling the founder's journey.</strong> Emotional connection first, commercial intent later.</p>
+            <p class="case-block-text"><strong>Stop selling the product. Tell the founder's journey.</strong> Build emotional connection first; commercial intent follows.</p>
           </div>
           <div>
             <span class="case-block-label">Execution</span>
-            <p class="case-block-text">End-to-end content system: scripting, filming, editing, and planning across channels. Every post built trust before it built demand.</p>
+            <p class="case-block-text">End-to-end content system: scripting, filming, editing, and planning. Every post earned trust before it asked for demand.</p>
           </div>
         </div>
-        <div class="case-media grid-3">
+        <span class="case-block-label">Creative</span>
+        <div class="case-media grid-3" style="margin-top:0.75rem">
           <button class="media-item tall" type="button" data-media-type="video" data-media-src="HOPR content/HOPR video 1.mp4" data-media-label="Founder Content" aria-label="Founder Content"><span class="media-item-label">[Founder Content]</span></button>
           <button class="media-item tall" type="button" data-media-type="video" data-media-src="HOPR content/HOPR video 2.mp4" data-media-label="Building the Company" aria-label="Building the Company"><span class="media-item-label">[Building the Company]</span></button>
           <button class="media-item tall" type="button" data-media-type="video" data-media-src="HOPR content/HOPR video 5.mp4" data-media-label="Behind the Scenes" aria-label="Behind the Scenes"><span class="media-item-label">[Behind the Scenes]</span></button>
         </div>
         <div class="case-outcome">
           <div class="outcome-num">Community<br>before commerce.</div>
-          <p class="outcome-label">Sales followed once trust was established. The audience didn't buy a product — they bought into a story they'd watched unfold in real time.</p>
+          <p class="outcome-label">Sales followed once trust was established. People didn't buy a product — they bought into a story they'd watched unfold.</p>
+        </div>
+        <div class="case-lesson">
+          <span class="case-block-label">Lesson Learned</span>
+          <p class="case-block-text">In crowded categories, story is the distribution strategy. Trust compounds faster than promotions.</p>
         </div>
       </div>
     </div>
@@ -399,21 +569,55 @@ section{padding:8rem 4rem}
       </div>
       <div class="case-body">
         <h3 class="case-title">Creative Testing<br>at Scale</h3>
-        <div class="case-grid">
+        <div class="case-process" aria-hidden="true">
+          <span class="case-process-step is-active">Challenge</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Research</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Strategy</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Execution</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Creative</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Results</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Lesson</span>
+        </div>
+        <div class="case-grid-4">
           <div>
             <span class="case-block-label">Challenge</span>
-            <p class="case-block-text">Paid campaigns needed better creative to sustain spend. Opinions about what works weren't enough — the team needed a systematic method.</p>
+            <p class="case-block-text">Paid campaigns needed better creative to sustain spend. Opinions weren't a method.</p>
+          </div>
+          <div>
+            <span class="case-block-label">Research</span>
+            <p class="case-block-text">Competitor audits, customer pain mapping, and angle mining before a single ad shipped.</p>
           </div>
           <div>
             <span class="case-block-label">Strategy</span>
-            <p class="case-block-text">Build a research-first creative process. Study competitors obsessively. Map customer pain points. <strong>Replace gut instinct with testable hypotheses.</strong></p>
+            <p class="case-block-text"><strong>Replace gut instinct with testable hypotheses.</strong> Every creative answered a specific question.</p>
           </div>
           <div>
             <span class="case-block-label">Execution</span>
-            <p class="case-block-text">Produced over <strong>35 static ad variations every week</strong>. Each variation tested a specific angle. Results informed the next round. The loop never stopped.</p>
+            <p class="case-block-text"><strong>35+ static variations weekly.</strong> Winners informed the next round. The loop never stopped.</p>
           </div>
         </div>
-        <span class="case-block-label">Creative Angles Tested</span>
+        <div class="thinking-row">
+          <span class="thinking-label">How I Think</span>
+          <div class="thinking-grid">
+            <div class="thinking-card">
+              <span class="thinking-card-title">Competitor Analysis</span>
+              <span class="thinking-card-note">Screenshot / board placeholder</span>
+            </div>
+            <div class="thinking-card">
+              <span class="thinking-card-title">Creative Matrix</span>
+              <span class="thinking-card-note">Angles × hooks × offers</span>
+            </div>
+            <div class="thinking-card">
+              <span class="thinking-card-title">Consumer Research</span>
+              <span class="thinking-card-note">Pain points &amp; language</span>
+            </div>
+            <div class="thinking-card">
+              <span class="thinking-card-title">Strategy Doc</span>
+              <span class="thinking-card-note">Notion / brief placeholder</span>
+            </div>
+          </div>
+        </div>
+        <span class="case-block-label" style="display:block;margin-top:2.5rem">Creative</span>
         <div class="case-media grid-3" style="margin-top:0.75rem">
           <button class="media-item sq contain" type="button" data-media-type="image" data-media-src="ADS/IMG_1886.JPG" data-media-label="DON'T BUY THIS DRINK" aria-label="DON'T BUY THIS DRINK"><span class="media-item-label">[DON'T BUY THIS DRINK]</span></button>
           <button class="media-item sq contain" type="button" data-media-type="image" data-media-src="ADS/IMG_1887.JPG" data-media-label="I Didn't Create Another Soft Drink" aria-label="I Didn't Create Another Soft Drink"><span class="media-item-label">[I Didn't Create Another Soft Drink]</span></button>
@@ -423,10 +627,13 @@ section{padding:8rem 4rem}
           <button class="media-item sq contain" type="button" data-media-type="image" data-media-src="ADS/IMG_1890.JPG" data-media-label="This Is Real Refreshing" aria-label="This Is Real Refreshing"><span class="media-item-label">[This Is Real Refreshing]</span></button>
           <button class="media-item sq contain" type="button" data-media-type="image" data-media-src="ADS/IMG_1892.JPG" data-media-label="Keep Going. Cold One's Waiting" aria-label="Keep Going. Cold One's Waiting"><span class="media-item-label">[Keep Going. Cold One's Waiting]</span></button>
         </div>
-        <p class="case-block-text" style="margin-top:2rem">Over two years, I created hundreds of static ads for HOPR. Each creative explored a different customer motivation and messaging angle rather than simply changing visuals. Performance data determined which concepts scaled, allowing us to continuously refine messaging and produce over 35 new creative variations every week.</p>
         <div class="case-outcome">
           <div class="outcome-num">~$10K<br><span style="font-size:1.8rem">/ day</span></div>
-          <p class="outcome-label">Creatives developed for campaigns operating at approximately USD $10,000/day in ad spend. Successful variations contributed to days acquiring up to <strong style="color:var(--sand)">62 new customers</strong> in a single day.</p>
+          <p class="outcome-label">Creatives built for campaigns at ~USD $10,000/day. Top variations helped drive days with up to <strong style="color:var(--sand)">62 new customers</strong>.</p>
+        </div>
+        <div class="case-lesson">
+          <span class="case-block-label">Lesson Learned</span>
+          <p class="case-block-text">Volume without a hypothesis is noise. The matrix turns research into a testing machine.</p>
         </div>
       </div>
     </div>
@@ -446,21 +653,31 @@ section{padding:8rem 4rem}
       </div>
       <div class="case-body">
         <h3 class="case-title">Scaling UGC<br>Performance</h3>
+        <div class="case-process" aria-hidden="true">
+          <span class="case-process-step is-active">Challenge</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step">Research</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Strategy</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Execution</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Creative</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Results</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Lesson</span>
+        </div>
         <div class="case-grid">
           <div>
             <span class="case-block-label">Challenge</span>
-            <p class="case-block-text">UGC creators delivered long-form content. The raw footage had potential — but one video running as-is wasn't enough.</p>
+            <p class="case-block-text">Creators delivered long-form footage with potential — but one cut running as-is wasn't enough.</p>
           </div>
           <div>
             <span class="case-block-label">Strategy</span>
-            <p class="case-block-text"><strong>Multiply each asset.</strong> One creator video isn't one ad. It's five different ads with five different angles, hooks, and audiences.</p>
+            <p class="case-block-text"><strong>Multiply each asset.</strong> One creator video becomes five ads — different hooks, angles, and audiences.</p>
           </div>
           <div>
             <span class="case-block-label">Execution</span>
-            <p class="case-block-text">Developed a modular editing system that extracted maximum value from each creator collaboration. <strong>Variations were tested systematically,</strong> not randomly.</p>
+            <p class="case-block-text">Modular editing system. <strong>Variations tested systematically,</strong> not randomly — then scaled winners.</p>
           </div>
         </div>
-        <div class="case-media grid-3">
+        <span class="case-block-label">Creative</span>
+        <div class="case-media grid-3" style="margin-top:0.75rem">
           <button class="media-item tall" type="button" data-media-type="video" data-media-src="ADS videos/ads 4.mp4" data-media-label="Original video received from the influencer" aria-label="Original video received from the influencer"><span class="media-item-label">[Original video received from the influencer]</span></button>
           <button class="media-item tall" type="button" data-media-type="video" data-media-src="ADS videos/ads 3.mp4" data-media-label="Variation 1" aria-label="Variation 1"><span class="media-item-label">[Variation 1]</span></button>
           <button class="media-item tall" type="button" data-media-type="video" data-media-src="ADS videos/ads 2.mp4" data-media-label="Variation 2" aria-label="Variation 2"><span class="media-item-label">[Variation 2]</span></button>
@@ -473,10 +690,13 @@ section{padding:8rem 4rem}
             </span>
           </button>
         </div>
-        <p class="case-block-text" style="margin-top:2rem">Every creator video was treated as raw creative material rather than a finished advertisement. By testing multiple hooks, messaging angles and edits, a single piece of UGC became several unique campaigns. The winning variation generated more than 200 sales in one week.</p>
         <div class="case-outcome">
           <div class="outcome-num">200+</div>
-          <p class="outcome-label">Sales generated in a single week by one creative variation — extracted from a single piece of UGC footage through systematic re-editing and hypothesis testing.</p>
+          <p class="outcome-label">Sales in one week from a single variation — extracted from one UGC asset through systematic re-editing and testing.</p>
+        </div>
+        <div class="case-lesson">
+          <span class="case-block-label">Lesson Learned</span>
+          <p class="case-block-text">UGC is raw material, not a finished ad. The edit is where performance is won.</p>
         </div>
       </div>
     </div>
@@ -496,24 +716,54 @@ section{padding:8rem 4rem}
       </div>
       <div class="case-body">
         <h3 class="case-title">Building Different<br>Brand Voices</h3>
+        <div class="case-process" aria-hidden="true">
+          <span class="case-process-step is-active">Challenge</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Research</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Strategy</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Execution</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Creative</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Results</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Lesson</span>
+        </div>
         <div class="case-grid">
           <div>
             <span class="case-block-label">Challenge</span>
-            <p class="case-block-text">Two brands. Two completely different audiences. The same visual or tonal approach would work for one and kill the other.</p>
+            <p class="case-block-text">Two brands. Two audiences. One visual or tonal approach would work for one and kill the other.</p>
           </div>
           <div>
             <span class="case-block-label">Strategy</span>
-            <p class="case-block-text">Define each brand from the audience up. Let the person the brand speaks to dictate the language, the rhythm, the visual feel — not the other way around.</p>
+            <p class="case-block-text">Define each brand from the audience up — language, rhythm, and visual feel follow the person, not the product.</p>
           </div>
           <div>
             <span class="case-block-label">Execution</span>
-            <p class="case-block-text">Created two entirely distinct creative systems with <strong>different editing rhythms, different storytelling frameworks, different visual languages.</strong></p>
+            <p class="case-block-text">Two distinct creative systems: <strong>different editing rhythms, storytelling frameworks, and visual languages.</strong></p>
+          </div>
+        </div>
+        <div class="thinking-row">
+          <span class="thinking-label">How I Think</span>
+          <div class="thinking-grid">
+            <div class="thinking-card">
+              <span class="thinking-card-title">Audience Research</span>
+              <span class="thinking-card-note">Demographics &amp; tone maps</span>
+            </div>
+            <div class="thinking-card">
+              <span class="thinking-card-title">Moodboards</span>
+              <span class="thinking-card-note">Visual direction placeholder</span>
+            </div>
+            <div class="thinking-card">
+              <span class="thinking-card-title">Voice Guidelines</span>
+              <span class="thinking-card-note">Do / don't language</span>
+            </div>
+            <div class="thinking-card">
+              <span class="thinking-card-title">Strategy Doc</span>
+              <span class="thinking-card-note">Brand system brief</span>
+            </div>
           </div>
         </div>
         <div class="brand-showcase">
           <div class="brand-panel">
             <p class="brand-panel-name">HOPR — Founder-Led Brand Storytelling</p>
-            <p class="brand-panel-lede">Trust built through the founder's journey — calm, educational storytelling for a mature audience.</p>
+            <p class="brand-panel-lede">Trust through the founder's journey — calm, educational storytelling for a mature audience.</p>
             <div class="brand-spec">
               <span class="case-block-label">Audience</span>
               <p class="brand-spec-text">35–60 years old</p>
@@ -529,7 +779,7 @@ section{padding:8rem 4rem}
           </div>
           <div class="brand-panel">
             <p class="brand-panel-name">XHALE — Gen Z Social Storytelling</p>
-            <p class="brand-panel-lede">Fast, personality-led content for Gen Z — trends, humor, and lifestyle over hard sell.</p>
+            <p class="brand-panel-lede">Fast, personality-led content — trends, humor, and lifestyle over hard sell.</p>
             <div class="brand-spec">
               <span class="case-block-label">Audience</span>
               <p class="brand-spec-text">18–30 years old</p>
@@ -546,7 +796,11 @@ section{padding:8rem 4rem}
         </div>
         <div class="case-outcome">
           <div class="outcome-num">Two brands.<br><span style="font-size:1.8rem">Zero overlap.</span></div>
-          <p class="outcome-label">Each brand earned its own distinct creative identity. A viewer should know which brand they're watching within the first two seconds — without seeing a logo.</p>
+          <p class="outcome-label">Each brand earned a distinct creative identity. A viewer should know which brand they're watching in two seconds — without a logo.</p>
+        </div>
+        <div class="case-lesson">
+          <span class="case-block-label">Lesson Learned</span>
+          <p class="case-block-text">Brand voice isn't decoration. It's a growth asset — and it has to be engineered for the audience.</p>
         </div>
       </div>
     </div>
@@ -566,18 +820,27 @@ section{padding:8rem 4rem}
       </div>
       <div class="case-body">
         <h3 class="case-title">Long-form Content<br>for Investor Trust</h3>
+        <div class="case-process" aria-hidden="true">
+          <span class="case-process-step is-active">Challenge</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step">Research</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Strategy</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Execution</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Creative</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Results</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Lesson</span>
+        </div>
         <div class="case-grid">
           <div>
             <span class="case-block-label">Challenge</span>
-            <p class="case-block-text">Instagram drove reach and community. But a different audience — investors, partners, potential hires — needed something else entirely.</p>
+            <p class="case-block-text">Instagram drove reach. Investors, partners, and hires needed something deeper.</p>
           </div>
           <div>
             <span class="case-block-label">Strategy</span>
-            <p class="case-block-text">Treat YouTube as a transparency platform. Not entertainment — <strong>evidence.</strong> Show the company building in real time. Let the work speak to those making serious decisions.</p>
+            <p class="case-block-text">Treat YouTube as transparency — not entertainment. <strong>Evidence over hype.</strong> Show the company building in real time.</p>
           </div>
           <div>
             <span class="case-block-label">Execution</span>
-            <p class="case-block-text">Long-form content covering company growth, product development, events, and operations. Every video made the case that this was a team worth backing.</p>
+            <p class="case-block-text">Long-form episodes on growth, product, events, and operations. Scripted, filmed, and edited end-to-end.</p>
           </div>
         </div>
         <div style="margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:2rem;border:1px solid var(--border)">
@@ -590,12 +853,20 @@ section{padding:8rem 4rem}
             <p class="case-block-text" style="margin-top:0.5rem"><strong>Transparency · Growth Story · Investor Trust · Credibility</strong></p>
           </div>
         </div>
-        <div class="case-media grid-3" style="margin-top:1rem">
+        <span class="case-block-label" style="display:block;margin-top:2rem">Creative</span>
+        <div class="case-media grid-3" style="margin-top:0.75rem">
           <button class="media-item wide" type="button" data-media-type="video" data-media-src="Youtube videos/youtube video 1.mp4" data-media-label="YouTube Video 01" aria-label="YouTube Video 01"><span class="media-item-label">[YouTube Video 01]</span></button>
           <button class="media-item wide" type="button" data-media-type="video" data-media-src="Youtube videos/youtube video 2.mp4" data-media-label="YouTube Video 02" aria-label="YouTube Video 02"><span class="media-item-label">[YouTube Video 02]</span></button>
           <button class="media-item wide" type="button" data-media-type="video" data-media-src="Youtube videos/youtube video 3.mp4" data-media-label="YouTube Video 03" aria-label="YouTube Video 03"><span class="media-item-label">[YouTube Video 03]</span></button>
         </div>
-        <p class="case-block-text" style="margin-top:2rem">Unlike Instagram, YouTube wasn't designed to drive immediate sales. It was built to document the company's journey, increase transparency, strengthen investor confidence, and create a permanent archive of our growth. I was responsible for scripting, filming and editing every episode.</p>
+        <div class="case-outcome">
+          <div class="outcome-num">Trust<br><span style="font-size:1.8rem">as content.</span></div>
+          <p class="outcome-label">YouTube wasn't built for instant sales — it documented the journey, strengthened investor confidence, and created a permanent growth archive.</p>
+        </div>
+        <div class="case-lesson">
+          <span class="case-block-label">Lesson Learned</span>
+          <p class="case-block-text">Different audiences need different proof. Long-form is where serious stakeholders decide to believe you.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -615,27 +886,57 @@ section{padding:8rem 4rem}
       </div>
       <div class="case-body">
         <h3 class="case-title">AI Creative<br>Workflow</h3>
+        <div class="case-process" aria-hidden="true">
+          <span class="case-process-step is-active">Challenge</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step">Research</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Strategy</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Execution</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Creative</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Results</span><span class="case-process-arrow">→</span>
+          <span class="case-process-step is-active">Lesson</span>
+        </div>
         <div class="case-grid">
           <div>
             <span class="case-block-label">Challenge</span>
-            <p class="case-block-text">A small team. Limited budget. Products not yet manufactured. Waiting for perfect conditions meant not producing at all.</p>
+            <p class="case-block-text">Small team. Limited budget. Products not yet manufactured. Waiting meant producing nothing.</p>
           </div>
           <div>
             <span class="case-block-label">Strategy</span>
-            <p class="case-block-text"><strong>Make AI a creative partner, not a shortcut.</strong> Integrate it into the workflow to accelerate production — not to replace thinking, but to remove friction from execution.</p>
+            <p class="case-block-text"><strong>AI as creative partner, not shortcut.</strong> Accelerate production — keep the thinking human.</p>
           </div>
           <div>
             <span class="case-block-label">Execution</span>
-            <p class="case-block-text">Built repeatable AI-assisted workflows across ideation, image generation, and asset management. Speed increased. Quality didn't drop. The creative bar stayed high.</p>
+            <p class="case-block-text">Repeatable workflows across ideation, image generation, and asset management. Speed up. Quality held.</p>
           </div>
         </div>
-        <span class="case-block-label">AI Video Projects</span>
+        <div class="thinking-row">
+          <span class="thinking-label">How I Think</span>
+          <div class="thinking-grid">
+            <div class="thinking-card">
+              <span class="thinking-card-title">AI Workflow</span>
+              <span class="thinking-card-note">System map placeholder</span>
+            </div>
+            <div class="thinking-card">
+              <span class="thinking-card-title">Moodboards</span>
+              <span class="thinking-card-note">Kive references</span>
+            </div>
+            <div class="thinking-card">
+              <span class="thinking-card-title">Prompt Library</span>
+              <span class="thinking-card-note">Hooks · scripts · angles</span>
+            </div>
+            <div class="thinking-card">
+              <span class="thinking-card-title">Notion System</span>
+              <span class="thinking-card-note">Process screenshot</span>
+            </div>
+          </div>
+        </div>
+        <span class="case-block-label" style="display:block;margin-top:2.5rem">Creative — AI Video</span>
         <div class="case-media media-grid-equal" style="margin-top:0.75rem">
           <button class="media-item tall" type="button" data-media-type="video" data-media-src="AI/1x1 golden hour (a richer layered flavour) 2026-04-16-11-18-02.MP4" data-media-label="Golden Hour" aria-label="Golden Hour"><span class="media-item-label">[Golden Hour]</span></button>
           <button class="media-item tall" type="button" data-media-type="video" data-media-src="AI/9x16 cucumber mint .MP4" data-media-label="Cucumber Mint" aria-label="Cucumber Mint"><span class="media-item-label">[Cucumber Mint]</span></button>
           <button class="media-item tall" type="button" data-media-type="video" data-media-src="AI/Botanicals launch .MP4" data-media-label="Botanicals Launch" aria-label="Botanicals Launch"><span class="media-item-label">[Botanicals Launch]</span></button>
         </div>
-        <span class="case-block-label" style="display:block;margin-top:2.5rem">AI Image Projects</span>
+        <span class="case-block-label" style="display:block;margin-top:2.5rem">Creative — AI Image</span>
         <div class="case-media grid-3" style="margin-top:0.75rem">
           <button class="media-item sq contain" type="button" data-media-type="image" data-media-src="AI/sabro.jpg" data-media-label="Sabro Product Splash" aria-label="Sabro Product Splash"><span class="media-item-label">[Sabro Product Splash]</span></button>
           <button class="media-item sq contain" type="button" data-media-type="image" data-media-src="AI/citra.jpg" data-media-label="Citra Hero Shot" aria-label="Citra Hero Shot"><span class="media-item-label">[Citra Hero Shot]</span></button>
@@ -649,11 +950,8 @@ section{padding:8rem 4rem}
         </div>
         <div style="margin-top:2.5rem;padding:2rem;border:1px solid var(--border)">
           <span class="case-block-label">My AI Workflow</span>
-          <p class="case-block-text" style="margin-top:0.75rem;margin-bottom:1rem">I use AI as a creative production system rather than a shortcut.</p>
-          <p class="case-block-text" style="margin-bottom:1rem">ChatGPT helps me develop creative strategy, hooks, scripts and messaging.</p>
-          <p class="case-block-text" style="margin-bottom:1rem">Kive helps generate moodboards, references and visual directions.</p>
-          <p class="case-block-text" style="margin-bottom:1rem">Freepik AI allows me to generate commercial-quality product visuals when photography isn't available.</p>
-          <p class="case-block-text" style="margin-bottom:1.5rem">Together these tools allow me to move from idea to production significantly faster while maintaining high creative quality.</p>
+          <p class="case-block-text" style="margin-top:0.75rem;margin-bottom:1rem"><strong>ChatGPT</strong> — strategy, hooks, scripts, messaging. <strong>Kive</strong> — moodboards and visual direction. <strong>Freepik AI</strong> — commercial product visuals when photography isn't available.</p>
+          <p class="case-block-text" style="margin-bottom:1.5rem">Together: idea → production, faster — without dropping the creative bar.</p>
           <div class="skills-list">
             <span class="skill-pill">ChatGPT</span>
             <span class="skill-pill">Kive</span>
@@ -662,7 +960,11 @@ section{padding:8rem 4rem}
         </div>
         <div class="case-outcome">
           <div class="outcome-num">More.<br><span style="font-size:1.8rem">Faster. Better.</span></div>
-          <p class="outcome-label">AI didn't replace creativity — it removed the ceiling. A small team produced at the volume of a much larger one, without sacrificing the thinking behind each asset.</p>
+          <p class="outcome-label">AI didn't replace creativity — it removed the ceiling. A small team produced at the volume of a much larger one.</p>
+        </div>
+        <div class="case-lesson">
+          <span class="case-block-label">Lesson Learned</span>
+          <p class="case-block-text">AI amplifies systems. Without strategy, it only amplifies noise.</p>
         </div>
       </div>
     </div>
@@ -679,34 +981,34 @@ section{padding:8rem 4rem}
     </div>
     <div class="phil-grid fade-up">
       <div class="phil-item">
-        <div class="phil-num">—</div>
-        <p class="phil-statement">People connect with stories before they connect with products.</p>
-        <p class="phil-detail">Emotion unlocks attention. Attention enables persuasion. Persuasion drives conversion. Start with the human, not the product.</p>
+        <div class="phil-num">01</div>
+        <p class="phil-statement">People connect with stories before products.</p>
+        <p class="phil-detail">Emotion unlocks attention. Attention enables persuasion. Start with the human.</p>
       </div>
       <div class="phil-item">
-        <div class="phil-num">—</div>
-        <p class="phil-statement">Quantity creates quality. You can't think your way to a winning creative.</p>
-        <p class="phil-detail">The best ad isn't discovered in a meeting. It emerges from a relentless cycle of making, testing, and learning. Volume is the prerequisite for breakthroughs.</p>
+        <div class="phil-num">02</div>
+        <p class="phil-statement">Quantity creates quality. You can't think your way to a winner.</p>
+        <p class="phil-detail">Breakthroughs emerge from making, testing, and learning — not from meetings alone.</p>
       </div>
       <div class="phil-item">
-        <div class="phil-num">—</div>
+        <div class="phil-num">03</div>
         <p class="phil-statement">Creative is a system. Systems scale. Taste alone doesn't.</p>
-        <p class="phil-detail">Good creative intuition is valuable. A repeatable system that produces good creative at scale is priceless. Build the process, not just the output.</p>
+        <p class="phil-detail">Build the process that produces good creative at volume — not just one-off output.</p>
       </div>
       <div class="phil-item">
-        <div class="phil-num">—</div>
-        <p class="phil-statement">Testing beats opinions. Always. No exceptions.</p>
-        <p class="phil-detail">The market decides what works — not the team, not the founder, not the creative director. The only valid opinion is the one the data confirms.</p>
+        <div class="phil-num">04</div>
+        <p class="phil-statement">Testing beats opinions. Always.</p>
+        <p class="phil-detail">The market decides what works. The only valid opinion is the one data confirms.</p>
       </div>
       <div class="phil-item">
-        <div class="phil-num">—</div>
+        <div class="phil-num">05</div>
         <p class="phil-statement">Growth lives in the iteration, not the launch.</p>
-        <p class="phil-detail">The first version is never the best version. The discipline to ship, learn, and improve faster than anyone else is the real competitive advantage.</p>
+        <p class="phil-detail">Ship, learn, improve faster than anyone else. That's the real advantage.</p>
       </div>
       <div class="phil-item">
-        <div class="phil-num">—</div>
-        <p class="phil-statement">AI should amplify creativity. Not simulate it.</p>
-        <p class="phil-detail">The best use of AI is removing friction from execution so humans can spend more time on what only humans can do: genuine insight, emotional truth, and original thinking.</p>
+        <div class="phil-num">06</div>
+        <p class="phil-statement">AI should amplify creativity — not simulate it.</p>
+        <p class="phil-detail">Remove friction from execution so humans can focus on insight and original thinking.</p>
       </div>
     </div>
   </div>
@@ -762,31 +1064,31 @@ section{padding:8rem 4rem}
       Part of something<br><em>genuinely rare.</em>
     </h2>
     <p class="rec-body">
-      For over two years, I worked inside one of Australia's fastest-growing beverage startups, helping build creative systems that scaled across paid media, organic content, product launches, founder storytelling, and YouTube. It was an opportunity to contribute during a period of rapid growth while shaping two distinct consumer brands from the ground up.
+      2+ years inside one of Australia's fastest-growing beverage startups — building creative systems across paid, organic, launches, founder storytelling, and YouTube for two distinct consumer brands.
     </p>
     <div class="rec-placeholders">
       <div class="rec-card">
         <span class="rec-card-label">Press &amp; Media</span>
-        <p class="rec-card-placeholder"><strong style="color:var(--ink);font-weight:500">$3M Seed Round Featured by Startup Researcher</strong><br><br>HOPR's fundraising journey was featured after the company raised over US$3 million through a community-backed seed round, becoming a standout example of founder-led growth after multiple VC rejections.</p>
+        <p class="rec-card-placeholder"><strong style="color:var(--ink);font-weight:500">$3M Seed Round Featured by Startup Researcher</strong><br><br>HOPR's community-backed seed round became a standout example of founder-led growth after multiple VC rejections.</p>
         <a href="https://www.startupresearcher.com/news/hopr-raises-usd3-million-seed-round-after-vc-rebuffs" class="rec-card-placeholder" style="display:inline-block;margin-top:0.75rem;color:var(--sand);text-decoration:none;border-bottom:1px solid rgba(196,168,130,0.4);transition:opacity 0.2s" target="_blank" rel="noopener noreferrer">Read feature ↗</a>
       </div>
       <div class="rec-card">
         <span class="rec-card-label">Industry Recognition</span>
-        <p class="rec-card-placeholder"><strong style="color:var(--ink);font-weight:500">Building During Rapid Growth</strong><br><br>Worked as part of the creative team while HOPR rapidly expanded its customer base, product range, retail presence, and national brand awareness across Australia.</p>
+        <p class="rec-card-placeholder"><strong style="color:var(--ink);font-weight:500">Building During Rapid Growth</strong><br><br>Part of the creative team as HOPR expanded customers, product range, retail presence, and national brand awareness.</p>
       </div>
       <div class="rec-card">
         <span class="rec-card-label">Company Milestones</span>
         <p class="rec-card-placeholder" style="margin-bottom:0.5rem"><strong style="color:var(--ink);font-weight:500">Key contributions at scale</strong></p>
         <p class="rec-card-placeholder" style="margin-bottom:0.35rem">· Supported 9 product launches</p>
-        <p class="rec-card-placeholder" style="margin-bottom:0.35rem">· Produced 50+ creative variations every week</p>
-        <p class="rec-card-placeholder" style="margin-bottom:0.35rem">· Created 30+ Instagram &amp; YouTube videos every month</p>
-        <p class="rec-card-placeholder">· Tested hundreds of creative concepts to improve performance marketing</p>
+        <p class="rec-card-placeholder" style="margin-bottom:0.35rem">· Produced 50+ creative variations weekly</p>
+        <p class="rec-card-placeholder" style="margin-bottom:0.35rem">· Created 30+ Instagram &amp; YouTube videos monthly</p>
+        <p class="rec-card-placeholder">· Tested hundreds of concepts to improve paid performance</p>
       </div>
       <div class="rec-card">
         <span class="rec-card-label">My Contribution</span>
-        <p class="rec-card-placeholder" style="margin-bottom:1rem">Worked across two completely different consumer brands within the same startup:</p>
-        <p class="rec-card-placeholder" style="margin-bottom:0.35rem"><strong style="color:var(--ink);font-weight:500">HOPR</strong><br>Founder storytelling, YouTube strategy, educational content, paid ads, and company growth content.</p>
-        <p class="rec-card-placeholder" style="margin-top:0.75rem"><strong style="color:var(--ink);font-weight:500">XHALE</strong><br>Gen Z social storytelling, trend-driven creative, product launches, lifestyle content, and community growth.</p>
+        <p class="rec-card-placeholder" style="margin-bottom:1rem">Two consumer brands inside the same startup:</p>
+        <p class="rec-card-placeholder" style="margin-bottom:0.35rem"><strong style="color:var(--ink);font-weight:500">HOPR</strong><br>Founder storytelling, YouTube, education, paid ads, growth content.</p>
+        <p class="rec-card-placeholder" style="margin-top:0.75rem"><strong style="color:var(--ink);font-weight:500">XHALE</strong><br>Gen Z social storytelling, trend creative, launches, lifestyle, community.</p>
       </div>
     </div>
   </div>
@@ -796,11 +1098,12 @@ section{padding:8rem 4rem}
 <div id="contact">
   <div class="contact-left fade-up">
     <h2 class="contact-headline">
-      Let's build<br>something that<br><em>actually works.</em>
+      Need a strategist<br>who can also<br><em>make it convert?</em>
     </h2>
     <p class="contact-sub">
-      I'm open to full-time roles at ambitious startups where creativity, speed, and business outcomes matter equally.
+      If you're hiring for creative strategy, performance creative, or growth marketing — and you care about systems as much as taste — let's talk.
     </p>
+    <p class="contact-cta-note">Open to full-time · Remote · Australia · Worldwide</p>
   </div>
   <div class="contact-right fade-up delay-1">
     <a href="https://www.linkedin.com/in/larissa-gusmão" class="contact-link">
@@ -827,7 +1130,7 @@ section{padding:8rem 4rem}
   </div>
 </div>
 <div class="footer-bar">
-  <span>© 2024 Larissa Gusmão</span>
+  <span>© 2026 Larissa Gusmão</span>
   <span>Creative Strategist · Sydney, AU</span>
 </div>
 
